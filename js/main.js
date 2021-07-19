@@ -24,3 +24,13 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+function setColor(e) {
+    var target = e.target,
+        count = +target.dataset.count;
+  
+     target.style.color = count === 1 ? "#ff0000" : '#000000';
+     target.dataset.count = count === 1 ? 0 : 1;
+
+}
+
+
